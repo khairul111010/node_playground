@@ -1,4 +1,4 @@
-const http = require("http");
+// const http = require("http");
 
 const express = require("express");
 
@@ -14,5 +14,6 @@ app.use((req, res, next) => {
   res.send("<h1>HELLO WORLD</h1>"); // send is an method that makes req and response easier by doing the hardcoding automatically
 });
 
-const server = http.createServer(app); // creating the server
-server.listen(3000); // listening to the port
+// const server = http.createServer(app); // creating the server
+// server.listen(3000); // listening to the port
+app.listen(3000);
