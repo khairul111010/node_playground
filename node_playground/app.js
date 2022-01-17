@@ -13,7 +13,7 @@ app.use("/path", (req, res, next) => {
   ); // send is an method that makes req and response easier by doing the hardcoding automatically
 });
 
-app.use("/", (req, res, next) => {
+app.post("/", (req, res, next) => {
   console.log(req.body);
   res.send("First route");
   //   next(); //searches for the next middleware
