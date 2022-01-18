@@ -9,4 +9,5 @@ git push -u origin main
 
 git pull https://github.com/khairul111010/node_playground.git
 git remote add origin https://github.com/khairul111010/node_playground.git
+git remote -v
 git push -u origin main
