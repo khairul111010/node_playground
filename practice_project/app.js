@@ -1,12 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const { engine } = require("express-handlebars");
+// const { engine } = require("express-handlebars");
 
 const app = express();
 
 const users = [];
-app.engine("hbs", engine({ defaultLayout: "main-layout", extname: "hbs" }));
-app.set("view engine", "hbs");
+//app.engine("hbs", engine({ defaultLayout: "main-layout", extname: "hbs" }));
+app.set("view engine", "ejs");
 app.set("views", "views");
 
 // app.use(bodyParser({ extended: false }));
